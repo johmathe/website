@@ -1,0 +1,29 @@
+# jemdoc: menu{MENU}{shotdetect.html}
+= Shotdetect
+
+== Shotdetect is a free software (LGPL) which is able to detect shots and scenes in a movie.
+
+The result produced is a simple XML file containing all the informations about the movie generated.
+
+== Example
+Put the file you want to analyse in the same directory of shotdetect (it not mandatory but it’s easier with the command line)
+
+
+~~~
+{from a shell}
+shotdetect -i myvideo.avi -o output_dir -s 60 -w -v -f -l -m -r
+~~~
+== Options details
+\-s : set threshold\n
+The threshold is the level for shot detection. High will not detect a lot, low will detect a lot of false shots. A good choice is about 60.
+
+\-w : generates audio xml information\n
+See the generated file for more details\n
+
+\-v : generates video xml informations\n
+See the generated file for more details\n
+
+\-f : generates the first image of shots\n
+\-l : generates the last image of shots\n
+\-m : generates the thumbnails images\n
+\-r : generates the real size images\n
