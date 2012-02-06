@@ -1,11 +1,19 @@
 # jemdoc: menu{MENU}{index.html}
 = Johan Mathe
 
+I currently work as a Software Engineer at Google, Inc in Mountain View, California. My main focus is planet-scale monitoring and auto diagnostic.
+
 == Interest and research
 - Convex and Distributed Optimization
 - Machine Learning
 - Signal Processing
-- Flying, Biking
+- Information theory
+
+== Contribution
+You could be interested in some of the open source contributions available on this page:
+- [shotdetect.html Shotdetect], a shot boundaries detection software.
+- [gfuzzy.html Gfuzzy], a fuzzy logic library written in Python.
+- A [projects_tail.html long tail], of smaller projects.
 
 == Contact
 1600 Amphitheatre Pkway, CA 94043\n

@@ -4,8 +4,13 @@
 == Piwik
 [http://piwik.org Piwik] is a downloadable, open source (GPL licensed) real time web analytics software program. It provides you with detailed reports on your website visitors: the search engines and keywords they used, the language they speak, your popular pages.
 
+== HDR App for android
+I wrote an HDR processing application for the Android operating system on mobile phones:
+  - [http://www.stanford.edu/class/ee368/Project_10/Reports/Mathe_Wong_HighDynamicRangeImaging.pdf Design document and report]
+  - [http://www.stanford.edu/class/ee368/Project_10/Code/Mathe_Wong_HighDynamicRangeImaging.zip Code]
+
 == RTOS
-I wrote a real time microkernel for motorolla 68k.
+This is a real time microkernel for motorolla 68k.
 
   - [http://johmathe.nonutc.fr/ressources/ece354_sdd.pdf Design document]
   - [http://johmathe.nonutc.fr/ressources/door-rtos.tar.bz2 Code]

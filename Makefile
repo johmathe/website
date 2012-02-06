@@ -9,11 +9,11 @@ docs : $(PHDOCS)
 .PHONY : update
 update : $(PHDOCS)
 	@echo -n 'Copying to server...'
-	cp -R html/* /home/www/johmathe/
+	cp -R html/* /home/www/johmathe.name/
 	@echo ' done.'
 
-html/%.html : %.jemdoc MENU
-	jemdoc -o $@ $<
+html/%.html : %.jemdoc MENU site.conf
+	jemdoc -c site.conf -o $@ $<
 
 .PHONY : clean
 clean :
