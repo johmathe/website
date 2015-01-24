@@ -20,5 +20,5 @@ I wrote an HDR processing application for the Android operating system on mobile
 == RTOS
 This is a real time microkernel for motorolla 68k.
 
-  - [http://johmathe.nonutc.fr/ressources/ece354_sdd.pdf Design document]
-  - [http://johmathe.nonutc.fr/ressources/door-rtos.tar.bz2 Code]
+  - [https://github.com/johmathe/door-rtos/blob/master/ece354_sdd.pdf?raw=true Design document]
+  - [https://github.com/johmathe/door-rtos Code]
