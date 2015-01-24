@@ -9,7 +9,7 @@ docs : $(PHDOCS)
 .PHONY : update
 update : $(PHDOCS)
 	@echo -n 'Copying to server...'
-	scp -R html/* eqs e.nonutc.fr:/home/www/johmathe.name/
+	scp -r html/* imgs eqs e.nonutc.fr:/home/www/johmathe.name/
 	@echo ' done.'
 
 html/%.html : %.jemdoc MENU site.conf
