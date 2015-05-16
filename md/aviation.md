@@ -1,5 +1,4 @@
-# jemdoc: menu{MENU}{aviation.html}
-= Some aviation links
+# Some aviation links
 
 - [bay_tour_flight.html Some Notes about the Bay tour Flight]
 - [http://www.duats.com Weather]

@@ -1,5 +1,4 @@
-# jemdoc: menu{MENU}{bay_tour_flight.html}
-= Tips Flying the bay tour
+# Tips Flying the bay tour
 
 The bay area is a very busy aviation area in the United states. The main difficulty comes from the three international airports (SFO - San Francisco International, OAK - Oakland International and SJC - San Jose International) arranged in some kind of triangle.
 

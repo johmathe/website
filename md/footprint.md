@@ -1,5 +1,4 @@
-# jemdoc: menu{MENU}{footprint.html}
-= Online footprint
+# Online footprint
 
 - [http://github.com/johmathe GitHub]
 - [http://picasaweb.google.com/114327008715195908815 Picasa]
