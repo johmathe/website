@@ -1,3 +1,11 @@
+title: my super title
+modified: 2010-12-05 19:30
+category: python
+tags: pelican, publishing
+slug: projects
+authors: alexis metaireau, conan doyle
+summary: short version for index and feeds
+
 # Gfuzzy
 
 Gfuzzy is an open source fuzzy inference engine middleware written in python. It is available on [GitHub](Also on [https://github.com/johmathe/gfuzzy GitHub)

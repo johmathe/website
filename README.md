@@ -1,3 +1,5 @@
 # Personal page doc
 
-git 
+```
+$ pip install pelican markdown
+```

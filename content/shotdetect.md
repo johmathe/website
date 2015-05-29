@@ -1,11 +1,11 @@
-Title: My super title
-Date: 2010-12-03 10:20
-Modified: 2010-12-05 19:30
-Category: Python
-Tags: pelican, publishing
-Slug: shotdetect
-Authors: Alexis Metaireau, Conan Doyle
-Summary: Short version for index and feeds
+title: my super title
+date: 2010-12-03 10:20
+modified: 2010-12-05 19:30
+category: python
+tags: pelican, publishing
+slug: shotdetect
+authors: alexis metaireau, conan doyle
+summary: short version for index and feeds
 
 # Shotdetect
 
