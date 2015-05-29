@@ -106,6 +106,7 @@ cf_upload: publish
 github: publish
 	cp -R $(OUTPUTDIR)/* johmathe.github.io/
 	cd johmathe.github.io
+	git add *
 	git commit -a -m "latest udpate"
 	git push
 	cd ..
