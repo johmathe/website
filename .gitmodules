@@ -1,3 +1,4 @@
 [submodule "johmathe.github.io"]
+        branch = master
 	path = johmathe.github.io
 	url = https://github.com/johmathe/johmathe.github.io.git
