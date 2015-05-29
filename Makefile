@@ -110,5 +110,7 @@ github: publish
 	git commit -a -m "latest udpate"
 	git push
 	cd ..
+	git add johmathe.github.io
+	git commit johmathe.github.io -m "updated website"
 
 .PHONY: html help clean regenerate serve devserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github
