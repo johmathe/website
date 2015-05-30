@@ -16,4 +16,7 @@ html/%.html : jemdoc/%.jemdoc MENU site.conf
 clean :
 	rm -f html/*.html
 
+publish :
+	cp -R html/* johmathe.github.io
+
 .PHONY : clean docs update
