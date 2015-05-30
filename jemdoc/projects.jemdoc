@@ -10,8 +10,10 @@ A fuzzy inference engine written in python. Associated publication: Yu-To Chen a
 
 == Performance Estimation of ADMM in a Distributed Environment
 
+Implementation of the ADMM global consensus algorithm with the MapReduce framework
+and comparaison of the resulting performance with another distributed optimization technique.
 - [http://johmathe.nonutc.fr/ressources/final_report_admm_johmathe.pdf Report]
-- [http://johmathe.nonutc.fr/ressources/poster_admm.pdf Poster]]]
+- [http://johmathe.nonutc.fr/ressources/poster_admm.pdf Poster]
 
 == Secret Santa
 A script to solve the secret santa problem and send results. The problem is being solved by using a cardinality-matching algorithm on top of a bipartite graph. Complexity is $O(N^2)$ with $N$ number of attendees. If a list of couples is defined, these won't exchange gifts.

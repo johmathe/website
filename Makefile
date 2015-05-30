@@ -1,4 +1,5 @@
-DOCS=aviation flying_bay_tour index misc online_footpring projects projects_tail publications research_projects shotdetect technical
+# ls jemdoc|sed s/.jemdoc//g |tr '\n' ' '
+DOCS=aviation flying_bay_tour flying_flighters flying_l39 flying_mig29 index misc online_footprint optimization projects projects_tail publications technical tutorials
 
 HDOCS=$(addsuffix .html, $(DOCS))
 PHDOCS=$(addprefix html/, $(HDOCS))
