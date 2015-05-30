@@ -1,4 +1,4 @@
-DOCS=index software_dev_tips eclipse_tips software_dev_tips aviation projects_tail misc footprint bay_tour_flight research_projects technical shotdetect publications gfuzzy past_projects projects
+DOCS=aviation flying_bay_tour index misc online_footpring projects projects_tail publications research_projects shotdetect technical
 
 HDOCS=$(addsuffix .html, $(DOCS))
 PHDOCS=$(addprefix html/, $(HDOCS))
