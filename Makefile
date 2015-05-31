@@ -1,5 +1,5 @@
 # ls jemdoc|sed s/.jemdoc//g |tr '\n' ' '
-DOCS=aviation flying_bay_tour flying_fighters flying_l39 flying_mig29 index misc online_footprint optimization projects projects_tail publications technical tutorials 
+DOCS=aviation flying_bay_tour flying_l39 flying_mig29 index misc online_footprint optimization projects publications tutorials
 
 HDOCS=$(addsuffix .html, $(DOCS))
 PHDOCS=$(addprefix html/, $(HDOCS))
