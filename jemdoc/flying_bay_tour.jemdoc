@@ -1,21 +1,57 @@
-# jemdoc: menu{MENU}{bay_tour_flight.html}
-= Tips Flying the bay tour
+# jemdoc: menu{MENU}{flying_bay_tour.html}
+= Flying the bay tour
 
-The bay area is a very busy aviation area in the United states. The main difficulty comes from the three international airports (SFO - San Francisco International, OAK - Oakland International and SJC - San Jose International) arranged in some kind of triangle.
+Pilots in the San Francisco bay area can enjoy one of the most scenic one hour flighh. A little tour of the bay called the *Bay Tour*.
 
-There is a class B airspace centered around SFO, and 2 class C airspaces around.
+Unfortunately, this area is one of the busiest airspace in the world. The main issue comes from the fact that there are three international airports and a couple of smaller airports around. ((SFO - San Francisco International, OAK - Oakland International and SJC - San Jose International) arranged in some kind of triangle.
+
+In terms of airspaces, you will find one Bravo airspace (SFO - San Francisco International) surrounded by two Charlie airspaces around (OAK - Oakland international and SJC - San Jose International).
+
+Here is an aviation map of the area. You might want to refer to skyvector or aeronautical charts in order to get more up to date information. Please do not use the following for navigation:
 
 ~~~
 {}{img_left}{imgs/bay_tour.png}{Bay Tour}
 ~~~
-The general procedure from Palo Alto could be as follow:
-  - Request the bay tour from KPAO ground
-  - Wait for a Squawk
-  - Straigh out departure towards San Carlos (KSQL)
-  - Frequency change to KSQL, give altitude
-  - Maintain South West of highway 101
-  - Frequency change to KSFO, give altitude
-  - Wait for the clearance into the class B airspace
-  - Once cleared into the class B, follow the highway 101, potentially climb up towards the San Bruno hills
-  - Wait for KSFO tower to hand you over to Norcal Departure (slightly different than norcal approach, but still the same TRACON)
-  - Once the tour is done over San Francisco City, Alcatraz, the Golden Gate Bridge, etc. tell Norcal about the destination (back to KPAO for instance). Wait for their instructions.
+
+~~~
+{}{img_left}{imgs/bay_tour_detail_north.png}{Bay Tour Detail}
+~~~
+
+Here are some guidelines and insights that can help you prepare for such a flight. Even with this information, I strongly recommend doing the first bay tour with the help of an experienced flight instructor. First time in a class Bravo airspace can be intimidating.
+
+== Sightseeings
+
+TODO pictures
+Among the things to see in the bay:
+  - Golden Gate Bridge
+  - Golden Gate Park
+  - Alcatraz
+  - Sausalito
+  - Angel Island
+  - San Francisco Downtown
+  - Mission District
+  - Twin Peaks, TODO find name of tower
+  - Ocean Beach
+  - Berkeley
+  - Mormon temple TODO links for each one of these
+  - Fancy Hotel TODO
+  - Bay Bridge
+  - Bay Itself
+
+== Waypoints
+Waypoints ATC could ask you about
+  - Milbrae Bart Station
+  - Amphitheatre Parkway
+  - Mormon Temple
+
+== Procedure
+
+Departing from a local airport like San Carlos (KSQL) or Palo Alto (KPAO), request a bay tour to ATC, and wait for them to come back to you. There are basically two options, depending on how busy San Francisco Airport is.
+
+- If the tower is not very busy, you can get a transition at FL020 and you will be asked to talk directly to San Francisco tower (120.5) which will clear you into the class Bravo airspace. They will probably ask you to stay west of highway 101, as the east part is ususally used for SFO's landings.
+
+- If SFO tower is busy, you will likely get a transition with NORCAL at FL035. In that case you will cross the San Francisco airport and start a descent afterwards. NORCAL will also ask you to stay West of highway 101 and will clear you into the Bravo airspace.
+
+== Misc
+
+- Don't forget to check for TFRs (temporary flight restrictions). Various sports game usually mean that you won't be able to fly aroud the stadiums. This can happen around AT&T Park, Oakland Arena, or the Levi Stadium (TODO CHECK) in Santa Clara.
