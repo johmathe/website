@@ -29,7 +29,7 @@ A script that retrieves a CD cover from AWS (Amazon Web Services) and displays i
   - [https://github.com/johmathe/Mpd-Cover Code (GitHub)]
 
 == Piwik
-[http://piwik.org Piwik] is a downloadable, open source (GPL licensed) real time web analytics software program. It provides you with detailed reports on your website visitors: the search engines and keywords they used, the language they speak, your popular pages.
+[http://piwik.org Piwik] is an open source (GPL licensed) real time web analytics software program. It provides you with detailed reports on your website visitors: the search engines and keywords they used, the language they speak, your popular pages.
 
 == HDR App for android
 I wrote an HDR processing application for the Android operating system on mobile phones:

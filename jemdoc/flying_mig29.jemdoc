@@ -11,6 +11,31 @@ Allow at least two months before the flight, for multiple reasons:
 
 I recommend arriving two days prior the flight. I arrived the day before which was a little bit short for preparations and such. If you are coming from a country with an important time difference you might find it difficult to adjust in only one day. One other option to make sure you are not going to be jet lagged is to visit Russia for a couple of days before the flight and to take this as an opportunity to adjust for the time difference.
 
+= Technical info on the Mig-29
+
+== General Characteristics
+
+- Crew: 1
+- Length: 17.37 m (57 ft)
+- Wingspan: 11.4 m (37 ft 3 in)
+- Height: 4.73 m (15 ft 6 in)
+- Wing area: 38 m² (409 ft²)
+- Empty weight: 11,000 kg (24,250 lb)
+- Loaded weight: 15,300 kg (33,730 lb)
+- Max. takeoff weight: 20,000 kg (44,100 lb)
+- Powerplant: 2 × Klimov [http://en.wikipedia.org/wiki/Klimov_RD-33 RD-33] afterburning turbofans, 8,300 [http://en.wikipedia.org/wiki/Kilogram-force Kgf] (81.4 kN, 18,300 lbf) each
+- Fuel capacity: 3,500 kg. (7,716 lbs.) internal
+
+== Performance
+
+- Maximum speed: *Mach 2.25* (2,400 km/h, 1,490 mph) At low altitude: Mach 1.25 (1,500 km/h, 930 mph)
+- Range: 1,430 km (772 nmi, 888 mi) with maximum internal fuel
+- Ferry range: 2,100 km (1,300 mi) with external drop tanks
+- Service ceiling: 18,013 m (59,100 ft)
+- Rate of climb: initial 330 m/s average 109 m/s 0–6000 m (65,000 ft/min)
+- Wing loading: 403 kg/m² (82 lb/ft²)
+- Thrust/weight: *1.09*
+- Maximum design g-load: *+9g*
 == Deroulement de la journee TODO(translate)
 
 - 7:30AM light breakfast
@@ -33,29 +58,7 @@ I recommend arriving two days prior the flight. I arrived the day before which w
 
 TODO(johmathe): link the pictures
 
-=== General characteristics of the Mig-29
 
-- Crew: 1
-- Length: 17.37 m (57 ft)
-- Wingspan: 11.4 m (37 ft 3 in)
-- Height: 4.73 m (15 ft 6 in)
-- Wing area: 38 m² (409 ft²)
-- Empty weight: 11,000 kg (24,250 lb)
-- Loaded weight: 15,300 kg (33,730 lb)
-- Max. takeoff weight: 20,000 kg (44,100 lb)
-- Powerplant: 2 × Klimov [http://en.wikipedia.org/wiki/Klimov_RD-33 RD-33] afterburning turbofans, 8,300 [http://en.wikipedia.org/wiki/Kilogram-force Kgf] (81.4 kN, 18,300 lbf) each
-- Fuel capacity: 3,500 kg. (7,716 lbs.) internal
-
-=== Performance
-
-- Maximum speed: *Mach 2.25* (2,400 km/h, 1,490 mph) At low altitude: Mach 1.25 (1,500 km/h, 930 mph)
-- Range: 1,430 km (772 nmi, 888 mi) with maximum internal fuel
-- Ferry range: 2,100 km (1,300 mi) with external drop tanks
-- Service ceiling: 18,013 m (59,100 ft)
-- Rate of climb: initial 330 m/s average 109 m/s 0–6000 m (65,000 ft/min)
-- Wing loading: 403 kg/m² (82 lb/ft²)
-- Thrust/weight: *1.09*
-- Maximum design g-load: *+9g*
 
 == Flight
 
@@ -73,7 +76,8 @@ Now for some of the flight details:
 - Stabilize, Maneuvers (turns, steep turns)
 - Turn on afterburners
 - Increase speed to mach *1.7* (2080.80 km/h)
-- Climb to *FL600* ft (tradeoff speed for altitude) - enjoy the view.
+- Climb to *FL600* ft (tradeoff speed for altitude) 
+- Enjoy the view.
 - Turn
 - Descent to *FL230* (7000m) at 60 m/s
 - Maneuvers:

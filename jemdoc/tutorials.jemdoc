@@ -9,10 +9,21 @@ TODO(johmathe): image of blocks showing how the recognition works
 
 == Building the dataset
 
+A good dataset is one of the most important things to get right. In this case we want lots of pictures of movie star faces. The first step is to download all the pictures from the internet. IMDB is a good source for this. Using tools like beautiful soup and joblib, you can make this relatively easily. See the following script:
+
+https://github.com/johmathe/FaceRecUtils/blob/master/imdb_scraper.py
+
+
 The stareface app recognises movie stars. 
 
 == Training the model
+
+Use libccv
+
 == Building the mobile app
+
+iPhone app
+
 == Room for improvement
 
 - Make the layers smaller
