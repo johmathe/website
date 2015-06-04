@@ -1,2 +1,7 @@
 # jemdoc: menu{MENU}{optimization.html}
+
 = Optimization
+
+== References
+
+- Stephen Boyd's [http://stanford.edu/~boyd/ website].
