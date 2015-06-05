@@ -1,24 +1,66 @@
-# jemdoc: menu{MENU}{optimisation.html}
-= Stareface tutorial
+# jemdoc: menu{MENU}{tutorials.html}
+= Building a CNN based mobile app for face matching
+
+This little writeup describes the process in building a Convolutional Neural Net based mobile application. The app takes a picture of someone's face and tries to match it to a famous actor/actress.
 
 == Overview
 
-The following tutorial is split in three main parts. The first part explains hot to build the dataset, the second explains how to train the model and the last chapter explains how to build the mobile app per se.
+This is a not a theorethical explanation of how CNN work. There is [http://deeplearning.net plenty] of litterature on the subject on the web. Here I'm going over some technical details on how to build an image recognition application without any dataset handy. 
 
-TODO(johmathe): image of blocks showing how the recognition works
+The process is roughly the following:
 
-== Building the dataset
+- Define your methodology
+- Build a training/validation dataset
+  -- Scrape the interwebs
+  -- Preprocess the images
+  -- Convert the dataset into a format that allows fast reads for training.
+- Train the convolutional neural net
+- Get the trained model
+- Write a mobile app that uses the model for inference tasks.
+
+== Define your methodology
+
+Getting a good dataset is one of the most important things for getting decent results from your model. I've found this to be poorly documented, since people usually rely on academic datasets like Imagenet/Cifar etc. If you want to build a practical application, you will usually want to build your own.
+
+You need to define what data you want clearly beforehand, which labels you are going to use etc.
+
+Here I have the following:
+
+- Get a dataset with 70 male hollywood actors, and 500+ pics per actor. That's 35k+ photos.
+- Pictures must be faces only
+- Pictures must be 256x256 px
+
+== Building the training/validation dataset
+
+=== Scrape your images
 
 A good dataset is one of the most important things to get right. In this case we want lots of pictures of movie star faces. The first step is to download all the pictures from the internet. IMDB is a good source for this. Using tools like beautiful soup and joblib, you can make this relatively easily. See the following script:
 
 https://github.com/johmathe/FaceRecUtils/blob/master/imdb_scraper.py
 
+=== Data preprocessing
 
-The stareface app recognises movie stars. 
+Images from IMDB often contain multiple actors. What we want is only the right actor's face. In order to extract only the right faces with the right size, here is the approach used:
+
+- Face crop with libccv.
+```
+https://github.com/johmathe/FaceRecUtils/blob/master/trimfaces.py
+```
+- Resizing of the images
+- Manual dataset cleanup (remove all pictures who are not the ones of the artist). This step was pretty painful to do by hand. If you want a great dataset, it's actually something hard to do automatically, since the whole point of this is to actually come up with an algorithm that does face classification.
+- Split the dataset into a training and a validation dataset.
+```
+https://github.com/johmathe/FaceRecUtils/blob/master/generate_dataset_metadata.py
+```
+Resize your images
+
+```
+$ parallel -j8 convert {} -resize 256x256! {} ::: */*.jpg
+```
 
 == Training the model
 
-Use libccv
+In order to train the model, let's use the [http://libccv.org/ libccv] library.
 
 == Building the mobile app
 
@@ -26,5 +68,6 @@ iPhone app
 
 == Room for improvement
 
-- Make the layers smaller
-- 
+- Make the layers smaller in size
+- Opitmize the net
+
