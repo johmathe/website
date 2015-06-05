@@ -26,7 +26,7 @@ You need to define what data you want clearly beforehand, which labels you are g
 
 Here I have the following:
 
-- Get a dataset with 70 male hollywood actors, and 500+ pics per actor. That's 35k+ photos.
+- Get a dataset with 70 male hollywood actors, and 500\+ pics per actor. That's 35k\+ photos.
 - Pictures must be faces only
 - Pictures must be 256x256 px
 
@@ -36,27 +36,35 @@ Here I have the following:
 
 A good dataset is one of the most important things to get right. In this case we want lots of pictures of movie star faces. The first step is to download all the pictures from the internet. IMDB is a good source for this. Using tools like beautiful soup and joblib, you can make this relatively easily. See the following script:
 
-https://github.com/johmathe/FaceRecUtils/blob/master/imdb_scraper.py
+~~~
+[https://github.com/johmathe/FaceRecUtils/blob/master/imdb_scraper.py]
+~~~
 
 === Data preprocessing
 
 Images from IMDB often contain multiple actors. What we want is only the right actor's face. In order to extract only the right faces with the right size, here is the approach used:
 
 - Face crop with libccv.
-```
-https://github.com/johmathe/FaceRecUtils/blob/master/trimfaces.py
-```
+
+~~~
+[https://github.com/johmathe/FaceRecUtils/blob/master/trimfaces.py]
+~~~
+
 - Resizing of the images
 - Manual dataset cleanup (remove all pictures who are not the ones of the artist). This step was pretty painful to do by hand. If you want a great dataset, it's actually something hard to do automatically, since the whole point of this is to actually come up with an algorithm that does face classification.
 - Split the dataset into a training and a validation dataset.
-```
-https://github.com/johmathe/FaceRecUtils/blob/master/generate_dataset_metadata.py
-```
+
+
+~~~
+[https://github.com/johmathe/FaceRecUtils/blob/master/generate_dataset_metadata.py]
+~~~
+
 Resize your images
 
-```
+~~~
+{}{}
 $ parallel -j8 convert {} -resize 256x256! {} ::: */*.jpg
-```
+~~~
 
 == Training the model
 

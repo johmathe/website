@@ -20,7 +20,7 @@
   })();
 </script>
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<title>Stareface tutorial</title>
+<title>Building a CNN based mobile app for face matching</title>
 </head>
 <body>
 <table summary="Table for page layout." id="tlayout">
@@ -31,7 +31,7 @@
 <div class="menu-category">Technical</div>
 <div class="menu-item"><a href="projects.html">Projects</a></div>
 <div class="menu-item"><a href="optimization.html">Optimization</a></div>
-<div class="menu-item"><a href="tutorials.html">Tutorials</a></div>
+<div class="menu-item"><a href="tutorials.html" class="current">Tutorials</a></div>
 <div class="menu-category">Personal</div>
 <div class="menu-item"><a href="aviation.html">Aviation</a></div>
 <div class="menu-item"><a href="https://plus.google.com/photos/+JohanMathe/albums">Photos</a></div>
@@ -41,29 +41,91 @@
 </td>
 <td id="layout-content">
 <div id="toptitle">
-<h1>Stareface tutorial</h1>
+<h1>Building a CNN based mobile app for face matching</h1>
 </div>
+<p>This little writeup describes the process in building a Convolutional Neural Net based mobile application. The app takes a picture of someone's face and tries to match it to a famous actor/actress.</p>
 <h2>Overview</h2>
-<p>The following tutorial is split in three main parts. The first part explains hot to build the dataset, the second explains how to train the model and the last chapter explains how to build the mobile app per se.</p>
-<p>TODO(johmathe): image of blocks showing how the recognition works</p>
-<h2>Building the dataset</h2>
+<p>This is a not a theorethical explanation of how CNN work. There is <a href="http://deeplearning.net">plenty</a> of litterature on the subject on the web. Here I'm going over some technical details on how to build an image recognition application without any dataset handy. </p>
+<p>The process is roughly the following:</p>
+<ul>
+<li><p>Define your methodology</p>
+</li>
+<li><p>Build a training/validation dataset</p>
+<ul>
+<li><p>Scrape the interwebs</p>
+</li>
+<li><p>Preprocess the images</p>
+</li>
+<li><p>Convert the dataset into a format that allows fast reads for training.</p>
+</li></ul>
+</li>
+<li><p>Train the convolutional neural net</p>
+</li>
+<li><p>Get the trained model</p>
+</li>
+<li><p>Write a mobile app that uses the model for inference tasks.</p>
+</li>
+</ul>
+<h2>Define your methodology</h2>
+<p>Getting a good dataset is one of the most important things for getting decent results from your model. I've found this to be poorly documented, since people usually rely on academic datasets like Imagenet/Cifar etc. If you want to build a practical application, you will usually want to build your own.</p>
+<p>You need to define what data you want clearly beforehand, which labels you are going to use etc.</p>
+<p>Here I have the following:</p>
+<ul>
+<li><p>Get a dataset with 70 male hollywood actors, and 500+ pics per actor. That's 35k+ photos.</p>
+</li>
+<li><p>Pictures must be faces only</p>
+</li>
+<li><p>Pictures must be 256x256 px</p>
+</li>
+</ul>
+<h2>Building the training/validation dataset</h2>
+<h3>Scrape your images</h3>
 <p>A good dataset is one of the most important things to get right. In this case we want lots of pictures of movie star faces. The first step is to download all the pictures from the internet. IMDB is a good source for this. Using tools like beautiful soup and joblib, you can make this relatively easily. See the following script:</p>
-<p>https:<i></i>github.com<i>johmathe</i>FaceRecUtils<i>blob</i>master/imdb_scraper.py</p>
-<p>The stareface app recognises movie stars. </p>
+<div class="infoblock">
+<div class="blockcontent">
+<p><a href="https://github.com/johmathe/FaceRecUtils/blob/master/imdb_scraper.py">https://github.com/johmathe/FaceRecUtils/blob/master/imdb_scraper.py</a></p>
+</div></div>
+<h3>Data preprocessing</h3>
+<p>Images from IMDB often contain multiple actors. What we want is only the right actor's face. In order to extract only the right faces with the right size, here is the approach used:</p>
+<ul>
+<li><p>Face crop with libccv.</p>
+</li>
+</ul>
+<div class="infoblock">
+<div class="blockcontent">
+<p><a href="https://github.com/johmathe/FaceRecUtils/blob/master/trimfaces.py">https://github.com/johmathe/FaceRecUtils/blob/master/trimfaces.py</a></p>
+</div></div>
+<ul>
+<li><p>Resizing of the images</p>
+</li>
+<li><p>Manual dataset cleanup (remove all pictures who are not the ones of the artist). This step was pretty painful to do by hand. If you want a great dataset, it's actually something hard to do automatically, since the whole point of this is to actually come up with an algorithm that does face classification.</p>
+</li>
+<li><p>Split the dataset into a training and a validation dataset.</p>
+</li>
+</ul>
+<div class="infoblock">
+<div class="blockcontent">
+<p><a href="https://github.com/johmathe/FaceRecUtils/blob/master/generate_dataset_metadata.py">https://github.com/johmathe/FaceRecUtils/blob/master/generate_dataset_metadata.py</a></p>
+</div></div>
+<p>Resize your images</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+$ parallel -j8 convert {} -resize 256x256! {} ::: */*.jpg
+</pre></div></div>
 <h2>Training the model</h2>
-<p>Use libccv</p>
+<p>In order to train the model, let's use the <a href="http://libccv.org/">libccv</a> library.</p>
 <h2>Building the mobile app</h2>
 <p>iPhone app</p>
 <h2>Room for improvement</h2>
 <ul>
-<li><p>Make the layers smaller</p>
+<li><p>Make the layers smaller in size</p>
 </li>
-<li><p></p>
+<li><p>Opitmize the net</p>
 </li>
 </ul>
 <div id="footer">
 <div id="footer-text">
-Page generated on 2015-05-31 20:42:19 PDT <br /> <g:plusone size="small" annotation="inline"></g:plusone>
+Page generated on 2015-06-05 11:24:04 PDT <br /> <g:plusone size="small" annotation="inline"></g:plusone>
 </div>
 </div>
 </td>
