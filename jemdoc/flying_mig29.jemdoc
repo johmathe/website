@@ -106,7 +106,6 @@ barely move your arm because it is 7x heavier than usual.
 Now for some of the flight details:
 
 - Takeoff (rotation speed @ 260km/h)
-TODO video of takeoff
 - Right Turn
 - Climb to *FL400* ft (\~12km)
 - Stabilize, Maneuvers (turns, steep turns)
@@ -138,10 +137,17 @@ only because I was not quite ready for these.
 
 == Videos
 === Whole flight in 3 minutes
-TODO
+~~~
+{}{raw}
+<iframe src="https://player.vimeo.com/video/130121405" width="600" height="337" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+~~~
 
 === Takeoff
-TODO
+~~~
+{}{raw}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KLO3apM_u_Q?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+~~~
+
 === High Altitude Flight
 ~~~
 {}{raw}
@@ -174,6 +180,6 @@ No specific training is necessary to fly such a airplane. Flying in this
 machine can be as smooth as a regular commercial flight. You might find it
 boring though. There are two main kind of training that can benefit you:
 
--- Physical training in order to hold greater maneuvers (I would personally
+- Physical training in order to hold greater maneuvers (I would personally
 recommend cardio + weight a couple of times a week for 3 months before flight)
--- Some aerobatics training will definitely allow you to enjoy the experience
+- Some aerobatics training will definitely allow you to enjoy the experience
