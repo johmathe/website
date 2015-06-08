@@ -114,10 +114,7 @@ TODO video of takeoff
 - Increase speed to mach *1.7* (2080.80 km/h)
 - Climb to *FL600* ft (tradeoff speed for altitude)
 - Enjoy the view.
-~~~
-{}{raw}
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DkJKEq_O-B4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-~~~
+
 
 - Turn
 - Descent to *FL230* (7000m) at 60 m/s
@@ -130,15 +127,9 @@ TODO video of reverse turn
 - Low altitude flight. Low pass and stall turn were performed by instructor
 only because I was not quite ready for these.
   -- Low pass (*15m*)
-TODO video of low pass
-  -- Hammerhead AKA [http://en.wikipedia.org/wiki/Stall_turn Stall Turn] (*0g*):
-~~~
-{}{raw}
-<iframe width="560" height="315" src="https://www.youtube.com/embed/chdcoDjLKwM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-~~~
 
+  -- Hammerhead AKA [http://en.wikipedia.org/wiki/Stall_turn Stall Turn] (*0g*):
   -- Inverted flight (*-1g*)
-TODO
   -- Steep turns (up to *+7g*)
 - Steep turns
 - Landing is assisted with a parachute:
@@ -147,6 +138,32 @@ TODO
 {}{img_left}{imgs/landing_mig29.jpg}{Mig29 on landing with parachute.}
 ~~~
 
+== Videos
+=== High Altitude Flight
+~~~
+{}{raw}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DkJKEq_O-B4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+~~~
+
+=== Inverted Flight
+~~~
+{}{raw}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/i6H2ct9amc0?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+~~~
+
+=== HammerHead
+~~~
+{}{raw}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/chdcoDjLKwM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+~~~
+
+=== Landing
+~~~
+{}{raw}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QUC6fvNs_TU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+~~~
+
+TODO video of low pass
 = Frequently Asked Questions
 
 - *Which kind of training is necessary?*

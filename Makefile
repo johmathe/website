@@ -18,7 +18,7 @@ clean :
 	rm -f html/*.html
 
 publish : docs
-	cp -R html/* johmathe.github.io
-	cp -R imgs johmathe.github.io
-	cp -R eqs johmathe.github.io
+	cp -R html/* ../johmathe.github.io
+	cp -R imgs ../johmathe.github.io
+	cp -R eqs ../johmathe.github.io
 .PHONY : clean docs update
