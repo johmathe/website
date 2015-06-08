@@ -1,9 +1,38 @@
 # jemdoc: menu{MENU}{flying_l39.html}
 = Flying the albastros L-39
+*Status: draft*
 
-The Albatros L-39 is a versatile trainer, similar to the Alpha-Jet in terms of performance.
+The [http://en.wikipedia.org/wiki/Aero_L-39_Albatros Albatros L-39] is a versatile trainer, similar to the Alpha-Jet in terms of performance.
 
-TODO add characteristics
+== Specs (L-39C)
+Data from Jane's All The World's Aircraft 1988–89
+
+=== General characteristics
+
+- Crew: 2
+- Length: 12.13 m (39 ft 9½ in)
+- Wingspan: 9.46 m (31 ft 0½ in)
+- Height: 4.77 m (15 ft 7¾ in)
+- Wing area: 18.8 m² (202 ft²)
+- Airfoil: NACA 64A012 mod
+- Empty weight: 3,455 kg (7,617 lb)
+- Max. takeoff weight: 4,700 kg (10,362 lb)
+- Powerplant: 1 × Ivchenko AI-25TL turbofan, 16.87 kN (3,792 lbf)
+
+=== Performance
+
+- Never exceed speed: Mach 0.80 (609 mph, 980 km/h)
+- Maximum speed: 750 km/h (405 knots, 466 mph) at 5,000 m (16,400 ft)
+- Range: 1,100 km (593 nmi, 683 mi) (internal fuel)
+- 1,750 km, (944 nmi, 1,087 mi) (internal and external fuel)
+- Endurance: 2 hr 30 min (internal fuel), 3 hr 50 min (internal and external fuel)
+- Service ceiling: 11,000 m (36,100 ft)
+- Rate of climb: 21 m/s (4,130 ft/min)
+- Wing loading: 250.0 kg/m² (51.3 lb/ft²)
+- Thrust/weight: 0.37
+- Climb to 5,000 m (16,400 ft): 5 min
+- Take-off roll: 530 m (1,740 ft)
+- Landing roll: 650 m (2,140 ft)
 
 Flight training
 jetwardbirds
@@ -17,12 +46,13 @@ Latency of the jet engine compared to a regular engine, ~ 10 seconds
 
 == Session 1: Aerobatics, maneuvering
 
-Out of Chino Airport
-Low flight
+- Out of Chino Airport
+- Low pass flight
+- Training on rolls, loops
 
 == Session 2: Taxiing, Takeoff, Landing
 
-Out of Santa Fe
-Taxiing is interesting because hard
-Landing air brakes
-Play on the incline
+- Out of Santa Fe
+- Taxiing is old school
+- Landing air brakes
+- Jet engine has delays - 10s
