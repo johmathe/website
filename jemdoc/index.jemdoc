@@ -1,7 +1,13 @@
 # jemdoc: menu{MENU}{index.html}
 = Johan Mathe
 
-I currently work as a Software Engineer at [http://www.google.com/about/company/ Google, Inc.] in [http://en.wikipedia.org/wiki/Mountain_View,_California Mountain View], [http://en.wikipedia.org/wiki/California California]. My main focus is [http://www.google.com/loon/ Project Loon], especially Wind-based stratospheric navigation of high altitude superpressure balloons.
+
+~~~
+{}{img_left}{imgs/johan.jpg}{alt text}{150px}{}
+I currently work as a Sr. Software Engineer at [http://www.google.com/about/company/ Google, Inc.] in [http://en.wikipedia.org/wiki/Mountain_View,_California Mountain View], [http://en.wikipedia.org/wiki/California California].
+
+My main focus is [http://www.google.com/loon/ Project Loon], especially Wind-based stratospheric navigation of high altitude superpressure balloons.
+~~~
 
 == Interest and research
 - Convex and Distributed Optimization
@@ -10,6 +16,7 @@ I currently work as a Software Engineer at [http://www.google.com/about/company/
 - Information theory
 - Optimal control
 - Planet scale monitoring
+- [aviation.html Aviation]
 
 == Contact
 1600 Amphitheatre Pkway, CA 94043\n
