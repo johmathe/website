@@ -1,13 +1,17 @@
 # jemdoc: menu{MENU}{tutorials.html}
 = Building a CNN based mobile app for face matching
+*Status: Draft*
 
+~~~
+{}{img_left}{imgs/stareface.jpg}{Stareface screenshot}{100px}{}{https://itunes.apple.com/us/app/starface-1.0/id975812643}
 This little writeup describes the process in building a Convolutional Neural Net based mobile application. The app takes a picture of someone's face and tries to match it to a famous actor/actress.
+~~~
 
 == Overview
 
-This is a not a theorethical explanation of how CNN work. There is [http://deeplearning.net plenty] of litterature on the subject on the web. Here I'm going over some technical details on how to build an image recognition application without any dataset handy. 
+This is a not a theorethical explanation of how CNN work. There is [http://deeplearning.net plenty] of litterature on the subject on the web. Here I'm going over some technical details on how to build an image recognition application without any dataset handy.
 
-The process is roughly the following:
+The process is the following:
 
 - Define your methodology
 - Build a training/validation dataset

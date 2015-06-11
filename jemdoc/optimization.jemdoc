@@ -1,6 +1,19 @@
 # jemdoc: menu{MENU}{optimization.html}
 = Optimization
 
+Some optimization resources:
+
+=== Performance Estimation of ADMM in a Distributed Environment
+~~~
+{}{img_left}{imgs/admm.png}{alt text}{200px}{}
+Implementation of the ADMM global consensus algorithm with the MapReduce framework and comparaison of the resulting performance with another distributed optimization technique.
+
+- [pdfs/final_report_admm_johmathe.pdf Report]
+- [pdfs/poster_admm.pdf Poster]
+~~~
+
 == References
 
 - Stephen Boyd's [http://stanford.edu/~boyd/ website].
+- A book: [http://www.springer.com/us/book/9780387303031 numerical optimization], by Nocedal and Wright.
+- Another book: [http://stanford.edu/~boyd/cvxbook/ Convex Optimazation], Boyd and Vandenberghe.

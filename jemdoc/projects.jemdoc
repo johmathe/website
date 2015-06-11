@@ -1,13 +1,13 @@
 # jemdoc: menu{MENU}{projects.html}
 = Projects
-Some projects I created or participated in. In no particular order.
+Some projects. In no particular order.
 
 == Performance Estimation of ADMM in a Distributed Environment
 
 Implementation of the ADMM global consensus algorithm with the MapReduce framework
 and comparaison of the resulting performance with another distributed optimization technique.
-- [http://johmathe.nonutc.fr/ressources/final_report_admm_johmathe.pdf Report]
-- [http://johmathe.nonutc.fr/ressources/poster_admm.pdf Poster]
+- [pdfs/final_report_admm_johmathe.pdf Report]
+- [pdfs/poster_admm.pdf Poster]
 
 
 == Shotdetect
