@@ -8,7 +8,7 @@ docs : $(PHDOCS)
 
 update : $(PHDOCS)
 	@echo -n 'Copying to server...'
-	scp -r html/* imgs eqs pdfs e.nonutc.fr:/home/www/johmathe.name/ || true
+	scp -r html/* imgs eqs pdfs johmathe.name:/home/www/johmathe.name/ || true
 	@echo ' done.'
 
 html/%.html : jemdoc/%.jemdoc MENU site.conf
