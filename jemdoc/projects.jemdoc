@@ -16,7 +16,7 @@ Shotdetect is a free software (LGPL) which detects shots and scenes from a video
 
 == Gfuzzy
 A fuzzy inference engine written in Python.
-- [http://johmathe.nonutc.fr/ressources/paper_fuzzy_logic.pdf Publication]: Yu-To Chen and Johan Mathe. *Fuzzy Computing Applications for Anti-Money Laundering and Distributed Storage System Load Monitoring* /world conference on soft computing 2011/
+- [pdfs/paper_fuzzy_logic.pdf Publication]: Yu-To Chen and Johan Mathe. *Fuzzy Computing Applications for Anti-Money Laundering and Distributed Storage System Load Monitoring* /world conference on soft computing 2011/
 - [https://github.com/johmathe/gfuzzy Code (GitHub)]
 
 == Secret Santa
