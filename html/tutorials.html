@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2526206-5']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<title>Building a CNN based mobile app for face matching</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Johan Mathe</div>
+<div class="menu-item"><a href="index.html">Home</a></div>
+<div class="menu-category">Technical</div>
+<div class="menu-item"><a href="projects.html">Projects</a></div>
+<div class="menu-item"><a href="optimization.html">Optimization</a></div>
+<div class="menu-item"><a href="tutorials.html" class="current">Tutorials</a></div>
+<div class="menu-category">Personal</div>
+<div class="menu-item"><a href="aviation.html">Aviation</a></div>
+<div class="menu-item"><a href="https://picasaweb.google.com/114327008715195908815">Photos</a></div>
+<div class="menu-category">Misc</div>
+<div class="menu-item"><a href="online_footprint.html">Online&nbsp;Footprint</a></div>
+<div class="menu-item"><a href="misc.html">Random</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Building a CNN based mobile app for face matching</h1>
+<div id="subtitle"><b>Status: Draft</b></div>
+</div>
+<table class="imgtable"><tr><td>
+<a href="https://itunes.apple.com/us/app/starface-1.0/id975812643"><img src="imgs/stareface.jpg" alt="Stareface screenshot" width="100px" /></a>&nbsp;</td>
+<td align="left"><p>This little writeup describes the process in building a Convolutional Neural Net based mobile application. The app takes a picture of someone's face and tries to match it to a famous actor/actress.</p>
+</td></tr></table>
+<h2>Overview</h2>
+<p>This is a not a theorethical explanation of how CNN work. There is <a href="http://deeplearning.net">plenty</a> of litterature on the subject on the web. Here I'm going over some technical details on how to build an image recognition application without any dataset handy.</p>
+<p>The process is the following:</p>
+<ul>
+<li><p>Define your methodology</p>
+</li>
+<li><p>Build a training/validation dataset</p>
+<ul>
+<li><p>Scrape the interwebs</p>
+</li>
+<li><p>Preprocess the images</p>
+</li>
+<li><p>Convert the dataset into a format that allows fast reads for training.</p>
+</li></ul>
+</li>
+<li><p>Train the convolutional neural net</p>
+</li>
+<li><p>Get the trained model</p>
+</li>
+<li><p>Write a mobile app that uses the model for inference tasks.</p>
+</li>
+</ul>
+<h2>Define your methodology</h2>
+<p>Getting a good dataset is one of the most important things for getting decent results from your model. I've found this to be poorly documented, since people usually rely on academic datasets like Imagenet/Cifar etc. If you want to build a practical application, you will usually want to build your own.</p>
+<p>You need to define what data you want clearly beforehand, which labels you are going to use etc.</p>
+<p>Here I have the following:</p>
+<ul>
+<li><p>Get a dataset with 70 male hollywood actors, and 500+ pics per actor. That's 35k+ photos.</p>
+</li>
+<li><p>Pictures must be faces only</p>
+</li>
+<li><p>Pictures must be 256x256 px</p>
+</li>
+</ul>
+<h2>Building the training/validation dataset</h2>
+<h3>Scrape your images</h3>
+<p>A good dataset is one of the most important things to get right. In this case we want lots of pictures of movie star faces. The first step is to download all the pictures from the internet. IMDB is a good source for this. Using tools like beautiful soup and joblib, you can make this relatively easily. See the following script:</p>
+<div class="infoblock">
+<div class="blockcontent">
+<p><a href="https://github.com/johmathe/FaceRecUtils/blob/master/imdb_scraper.py">https://github.com/johmathe/FaceRecUtils/blob/master/imdb_scraper.py</a></p>
+</div></div>
+<h3>Data preprocessing</h3>
+<p>Images from IMDB often contain multiple actors. What we want is only the right actor's face. In order to extract only the right faces with the right size, here is the approach used:</p>
+<ul>
+<li><p>Face crop with libccv.</p>
+</li>
+</ul>
+<div class="infoblock">
+<div class="blockcontent">
+<p><a href="https://github.com/johmathe/FaceRecUtils/blob/master/trimfaces.py">https://github.com/johmathe/FaceRecUtils/blob/master/trimfaces.py</a></p>
+</div></div>
+<ul>
+<li><p>Resizing of the images</p>
+</li>
+<li><p>Manual dataset cleanup (remove all pictures who are not the ones of the artist). This step was pretty painful to do by hand. If you want a great dataset, it's actually something hard to do automatically, since the whole point of this is to actually come up with an algorithm that does face classification.</p>
+</li>
+<li><p>Split the dataset into a training and a validation dataset.</p>
+</li>
+</ul>
+<div class="infoblock">
+<div class="blockcontent">
+<p><a href="https://github.com/johmathe/FaceRecUtils/blob/master/generate_dataset_metadata.py">https://github.com/johmathe/FaceRecUtils/blob/master/generate_dataset_metadata.py</a></p>
+</div></div>
+<p>Resize your images</p>
+<div class="codeblock">
+<div class="blockcontent"><pre>
+$ parallel -j8 convert {} -resize 256x256! {} ::: */*.jpg
+</pre></div></div>
+<h2>Training the model</h2>
+<p>In order to train the model, let's use the <a href="http://libccv.org/">libccv</a> library.</p>
+<h2>Building the mobile app</h2>
+<p>iPhone app</p>
+<h2>Room for improvement</h2>
+<ul>
+<li><p>Make the layers smaller in size</p>
+</li>
+<li><p>Opitmize the net</p>
+</li>
+</ul>
+<div id="footer">
+<div id="footer-text">
+Page generated on 2015-11-23 21:16:05 PST <br />
+</div>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>
