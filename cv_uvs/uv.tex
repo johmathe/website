@@ -1,0 +1,98 @@
+%%
+%% Liste des uvs
+%% Johan MATHE, Creative commons
+%%
+
+\documentclass[oneside,a4paper]{article}
+
+% Autres classes disponibles : report, book, slides
+% Options possibles : 11pt, 12pt (taille de la fonte)
+%                     oneside (recto simple)
+%                     twoside (document recto-verso)
+
+
+\usepackage[french]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{vmargin}
+%\usepackage{palatino}
+\pagestyle{empty}
+
+% Pour mettre des enttes avec les titres des sections en haut de page
+
+% Les paramtres du titre 
+
+\AtBeginDocument{\sffamily}
+
+
+\ExecuteOptions{color}
+
+% process given options
+\ProcessOptions\relax
+
+
+%-------------------------------------------------------------------------------
+%                style definition
+%-------------------------------------------------------------------------------
+% symbols used
+% colors
+
+
+\newlength{\larg}
+\setlength{\larg}{14.5cm}
+
+\title{\textsf{Unités de Valeurs suivies et validées}\\ - \\Université de Technologie de Compiègne}
+\author{\textsf{Johan \textsc{MATHE}}}
+\date{\today}
+
+\setmarginsrb{3cm}{2cm}{3cm}{2cm}
+{0cm}{1cm}{0cm}{1cm}
+
+\begin{document}
+\maketitle
+
+\section{\textsf{Fondamentaux}}
+
+\begin{description}
+\item[\textsf{IA01:}]{\textbf{Fondements de l'intelligence artificielle}\\Thèmes:intelligence artificielle ; représentation des connaissances ; raisonnement}
+\item[\textsf{NF16:}]{\textbf{Algorithmique et structures de données}\\Thèmes: Complexités des algorithmes}
+\item[\textsf{MT12:}]{\textbf{Techniques mathématiques de l'ingénieur}\\Thèmes: intégrale de Lebesgue ; distribution ; convolution ; séries de Fourier ; tranforméee de Fourier ; transformée de Laplace ; transformée en ondelettes}
+\end{description}
+
+\section{\textsf{Systèmes d'information}}
+\begin{description}
+\item[\textsf{SR01:}]{\textbf{Maitrise des systèmes informatiques}\\Thèmes:  langage C ; systèmes d'exploitation ; programmation système ; appels systèmes en C}
+\item[\textsf{SR02:}]{\textbf{Systèmes d'exploitation}\\Thèmes: ordonnancement de taches; programmation concurrente; programmation système; threads}
+\item[\textsf{LO11:}]{\textbf{Théorie et pratique de la programmation}\\Thèmes:  programmation orientée objet (C++) ; structures de données abstraites}
+\item[\textsf{IC03:}]{\textbf{Le numérique : des formats aux chaînes de production.}\\Thèmes: formats, documents numériques, compression, photographie numérique, esthétique, traitement, chaîne de production}
+\item[\textsf{TX01:}]{\textbf{Mise en place d'un site collaboratif.}\\Thèmes: Technologies web dynamique : PHP, SQL (MySQL), LDAP, HTML, scripts shell, infographie}
+\end{description}
+
+\section{\textsf{Informatique industrielle}}
+\begin{description}
+\item[\textsf{MI01:}]{\textbf{Structure d'un calculateur}\\Thèmes: architecture d'un ordinateur ; microprocesseurs ; microcontrôleurs ; VHDL}
+\item[\textsf{NF02:}]{\textbf{Du circuit intégré au microprocessur}\\Thèmes: électronique numérique ; microprocesseurs ; interfaces}
+\item[\textsf{SY08:}]{\textbf{Modélisation des systèmes à événements discrets}\\Thèmes: systèmes à événements discrets, modélisation: automates;réseaux de Petri autonomes, non autonomes;Grafcet.}
+\item[\textsf{SY14:}]{\textbf{Elements d'automatique}\\Thèmes: automatique ; contrôle en temps réel ; observation d'état ; capteurs virtuels}
+\item[\textsf{TX02:}]{\textbf{Conception d'une carte d'entrée/sorties}\\Thèmes: Bus ISA, PC104, Bus I2C, VHDL, interfacage}
+\end{description}
+
+
+\section{\textsf{Langues}}
+\begin{description}
+\item[\textsf{LA23:}]{\textbf{Espagnol niveau pratique}\\Thèmes : espagnol ; niveau pratique ; niveau intermédiaire}
+\item[\textsf{LA24:}]{\textbf{Le monde hispanique contemporain : l'Amérique latine (niveau IV)}\\langue, discours,représentations, culture, civilisation}
+\item[\textsf{LA61:}]{\textbf{Chinois - Niveau débutant}\\Thèmes : Acquisition des bases de la prononciation, de l'écriture et de la grammaire chinoises.}
+\item[\textsf{LB13:}]{\textbf{Anglais niveau pratique}\\Thèmes: approche communicative ; analyse contextuelle de la grammaire; autonomie}
+\end{description}
+
+\section{\textsf{Culture générale}}
+\begin{description}
+\item[\textsf{IC01 :}]{\textbf{Industries culturelles}\\Thèmes : industrie culturelle ; numérique ; internet ; réseau ; objet temporel ; système technique, convergence ; industrialisation ; standardisation ; contenus}
+\item[\textsf{GE10 :}]{\textbf{Économie politique}\\libéralisme ; mondialisation ; keynésianisme ; marché ; croissance ; développement durable; politiques économiques dans le cadre de l'union européenne ; chômage ; redistribution ; système financier et monétaire}
+\item[\textsf{AV01:}]{\textbf{Initiation à l'analyse et à la réalisation audiovisuelle}\\Thèmes : audiovisuel ; convergence numérique ; industries culturelles ; montage}
+\item[\textsf{HE01:}]{\textbf{Epistémologie et histoire des sciences}\\Thèmes : histoire des sciences ; épistémologie ; sociologie des sciences ; induction ; réfutation ; ignorance}
+\item[\textsf{HE03:}]{\textbf{Logique, histoire et formalisme}\\Thèmes : Formalismes et sciences / Histoire de la logique / d'Aristote à Göedel / Systèmes axiomatiques / Logique propositionnelle }
+\end{description}
+
+
+\end{document}

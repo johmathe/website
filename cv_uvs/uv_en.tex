@@ -1,0 +1,97 @@
+\documentclass[oneside,a4paper]{article}
+
+% Autres classes disponibles : report, book, slides
+% Options possibles : 11pt, 12pt (taille de la fonte)
+%                     oneside (recto simple)
+%                     twoside (document recto-verso)
+
+
+\usepackage[latin1]{inputenc}
+\usepackage{vmargin}
+%\usepackage{palatino}
+\pagestyle{empty}
+
+% Pour mettre des enttes avec les titres des sections en haut de page
+
+% Les paramtres du titre 
+
+\AtBeginDocument{\sffamily}
+
+
+\ExecuteOptions{color}
+
+% process given options
+\ProcessOptions\relax
+
+
+%-------------------------------------------------------------------------------
+%                style definition
+%-------------------------------------------------------------------------------
+% symbols used
+% colors
+
+
+\newlength{\larg}
+\setlength{\larg}{14.5cm}
+
+\title{\textsf{Uv}\\ - \\Université de Technologie de Compiègne}
+\author{\textsf{Johan \textsc{MATHE}}}
+\date{\today}
+
+\setmarginsrb{3cm}{2cm}{3cm}{2cm}
+{0cm}{1cm}{0cm}{1cm}
+
+\begin{document}
+\maketitle
+
+\section{\textsf{Fondamentaux}}
+
+\begin{description}
+\item[\textsf{IA01:}]{\textbf{Fondements de l'intelligence artificielle}\\Key words :  Artificial Intelligence, Knowledge Representation, Reasoning\\ECTS Credits : 6}
+\item[\textsf{NF16:}]{\textbf{Introduction of the basic data structures and of the basic algorithms that manage them.}\\ Data structures Algorithms}
+\item[\textsf{MT12:}]{\textbf{Mathematical Technic for engineers}\\Key words :  Lebesgue integral, distribution, convolution, Fourier series, Fourier transform, Laplace transform, wavelet transform;}
+\end{description}
+
+\section{\textsf{Systèmes d'information}}
+\begin{description}
+\item[\textsf{SR01:}]{\textbf{Operating systems usage.}\\Key words : C language, operating systems, system programming, system services from C,Python langage}
+\item[\textsf{SR02:}]{\textbf{Operating systems: fundamentals and programming}\\Brief description : First part: fundamentals of operating systems Second part: internal mechanisms (interrupts, virtual memory, OS-hardware interaction, interaction between processes...)\\Key words : "operating systems", "system programming"}
+\item[\textsf{LO11:}]{\textbf{Théorie et pratique de la programmation}\\Thèmes:  programmation orientée objet (C++) ; structures de données abstraites}
+\end{description}
+
+\section{\textsf{Informatique industrielle}}
+\begin{description}
+\item[\textsf{MI01:}]{\textbf{Structure d'un calculateur}\\Thèmes: architecture d'un ordinateur ; microprocesseurs ; microcontrôleurs ; VHDL}
+\item[\textsf{NF02:}]{\textbf{From digital circuits to microprocessor}\\Brief description :  This course permits to introduce the basic concepts needed to understand and program microprocessors and microcontrollers.\\Key words :  digital electronic, microprocessor, microcontroller, interfacing}
+\item[\textsf{SY08:}]{\textbf{Introduction to modeling of discrete event systems.}\\Brief description : Beyond providing a basic introduction to concepts of discrete event systems, this course includes an overview of modeling, simulation, and analysis tools : finite state machines - places-transitions Petri Nets and some of their extensions - GRAFCET, as well as case studies in modeling.\\Key words :  Finite state machines - places-transitions Petri Nets - GRAFCET - modeling and simulation - snchronized PN - timed PN.}
+\item[\textsf{SY14:}]{\textbf{Basics in Control System}\\
+Brief description :  This course introduces some basic concepts to control, observe and analyse dynamical systems such as automotives, transportation networks and production systems.\\Key words : Control Systems, real-time control, state observation, virtual sensors}
+\end{description}
+
+
+\section{\textsf{Langues}}
+\begin{description}
+\item[\textsf{LA23}]{\textbf{Practical Spanish}\\Brief description : Acquisition of a practival level of spanish in 4 areas of competency that are oral comprehension ; written expression ; by listening to audio recordings and specific assignments ; by reading various authentic documents ; and revision as well as a more in depth study of certain aspects of spanish grammar.
+\\Key words : spanish ; pratical level ; intermediate level }
+\item[\textsf{LA24}]{\textbf{Spanish Level IV : "The contemporary Hispanic world Latin America"}\\
+Brief description :  Ther UV aims at developing student's knowledge of LatinAmerican culture and civilization and to improve their communicative competence in spanish
+\\Key words : culture; civilization; language; discourse and representations; arts and litterature.
+}
+\item[\textsf{LA61:}]{\textbf{Chinois - Niveau débutant}\\Thèmes : Acquisition des bases de la prononciation, de l'écriture et de la grammaire chinoises.}
+\item[\textsf{LB13:}]{\textbf{Practical English}\\Brief description : This LB13 course represents the practical level of English which must be achieved to obtain the U.T.C. engineering diploma. Intensive training in the four language skills (oral and written comprehension, oral and written expression) is required.
+\\
+Key words : communicative approach - contextual analysis of grammar - emphasis on both fluency and accuracy - autonomy - self-correction.
+}
+a\end{description}
+
+\section{\textsf{Culture générale}}
+\begin{description}
+\item[\textsf{IC01 :}]{\textbf{Industries culturelles}\\Thèmes : industrie culturelle ; numérique ; internet ; réseau ; objet temporel ; système technique, convergence ; industrialisation ; standardisation ; contenus}
+\item[\textsf{GE10 :}]{\textbf{Économie politique}\\libéralisme ; mondialisation ; keynésianisme ; marché ; croissance ; développement durable; politiques économiques dans le cadre de l'union européenne ; chômage ; redistribution ; système financier et monétaire}
+\item[\textsf{AV01:}]{\textbf{Initiation à l'analyse et à la réalisation audiovisuelle}\\Thèmes : audiovisuel ; convergence numérique ; industries culturelles ; montage}
+\item[\textsf{HE01:}]{\textbf{Epistémologie et histoire des sciences}\\Thèmes : histoire des sciences ; épistémologie ; sociologie des sciences ; induction ; réfutation ; ignorance}
+\item[\textsf{HE03:}]{\textbf{Logique, histoire et formalisme}\\Thèmes : Formalismes et sciences / Histoire de la logique / d'Aristote à Göedel / Systèmes axiomatiques / Logique propositionnelle }
+\end{description}
+
+
+\end{document}
