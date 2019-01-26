@@ -1,0 +1,341 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+  <meta name=viewport content="width=800">
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <style type="text/css">
+    /* Color scheme stolen from Sergey Karayev */
+
+    a {
+      color: #1772d0;
+      text-decoration: none;
+    }
+
+    a:focus,
+    a:hover {
+      color: #f09228;
+      text-decoration: none;
+    }
+
+    body,
+    td,
+    th,
+    tr,
+    p,
+    a {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px
+    }
+
+    strong {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+    heading {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 22px;
+    }
+
+    papertitle {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 700
+    }
+
+    name {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 32px;
+    }
+
+    .one {
+      width: 160px;
+      height: 160px;
+      position: relative;
+    }
+
+    .two {
+      width: 160px;
+      height: 160px;
+      position: absolute;
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+
+    .fade {
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+
+    span.highlight {
+      background-color: #ffffd0;
+    }
+  </style>
+  <link rel="icon" type="image/png" href="images/seal_icon.png">
+  <title>Johan Mathe</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="67%" valign="middle">
+              <p align="center">
+                <name>Johan Mathe</name>
+              </p>
+              I am a renaissance engineer, mad scientist and entrepreneur interested in understanding the impact of climate change and weather on a plethora of metrics and systems.
+
+My background is applied mathematics and distributed systems. So far I have applied these skills to Flying Robots, Healthcare, Plasma Physics and Energy processing.
+
+<p>I co-founded <a href="http://froglabs.ai">Froglabs</a>, where we are building algorithms and infrastructure to understand the impact of weather 1000x faster than the current state of the art.</p>
+
+Cultivating playfulness is in my opinion critical. With a dedicated crew of tinkerers, we enjoy building useless things. One of our most recent completed projects was a remote-controlled flame-throwing inflatable kayak. We also tried to reproduce zero and negative gravity conditions in a tiny aerobatics airplane.
+
+
+              <p align="center">
+                <a href="mailto:johan@froglabs.ai">Email</a> &nbsp;/&nbsp;
+                <a href="http://github.com/johmathe">Github</a> &nbsp;/&nbsp;
+                <a href="https://www.linkedin.com/in/johmmathe/"> LinkedIn </a>
+              </p>
+            </td>
+            <td width="33%">
+              <img width=250 src="images/johan_small.jpg">
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td width="100%" valign="middle">
+              <heading>Research</heading>
+              <p>
+              I'm interested in signal processing, optimization, statistics/machine learning, image processing and control theory.
+              </p>
+            </td>
+          </tr>
+        </table>
+
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+          <tr onmouseout="pvnet_stop()" onmouseover="pvnet_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='pvnet_image'><img src='images/pvnet_after.png' width=170></div>
+                <img src='images/pvnet_before.png' width=170 >
+              </div>
+              <script type="text/javascript">
+                function pvnet_start() {
+                  document.getElementById('pvnet_image').style.opacity = "1";
+                }
+
+                function pvnet_stop() {
+                  document.getElementById('pvnet_image').style.opacity = "0";
+                }
+                pvnet_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+              <a href="https://arxiv.org/abs/1901.01370">
+                <papertitle>PVNet: A LRCN Architecture for Spatio-Temporal Photovoltaic Power Forecasting from Numerical Weather Prediction</papertitle>
+              </a>
+              <br>
+              <strong>Johan Mathe</strong>
+              <a href="https://sites.google.com/site/ninamiolane/">Nina Miolane</a>,
+              <a href="https://www.andrew.cmu.edu/user/jianwan2/">Jian Wang</a>,
+              <a href="https://www.andrew.cmu.edu/user/jianwan2/">Jian Wang</a>,
+              <a href="https://www.andrew.cmu.edu/user/jianwan2/">Jian Wang</a>,
+              <br>
+              <em>arXiv Preprint</em>, 2019
+              <br>
+              <p></p>
+              <p>
+                By making one camera in a stereo pair hyperspectral we can multiplex dark flash pairs in space instead of time.
+              </p>
+            </td>
+          </tr>
+
+          <tr onmouseout="geomstats_stop()" onmouseover="geomstats_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='geomstats_image'><img src='images/geomstats_after.png' width=170></div>
+                <img src='images/geomstats_before.png' width=170>
+              </div>
+              <script type="text/javascript">
+                function geomstats_start() {
+                  document.getElementById('geomstats_image').style.opacity = "1";
+                }
+
+                function geomstats_stop() {
+                  document.getElementById('geomstats_image').style.opacity = "0";
+                }
+                geomstats_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+              <a href="https://arxiv.org/abs/1811.11127">
+                  <papertitle>geomstats: a Python Package for Riemannian Geometry in Machine Learning</papertitle>
+              </a>
+              <br>
+              <a href="http://timothybrooks.com/">Nina Miolane</a>,
+              <strong>Johan Mathe</strong>
+              <a href="https://people.csail.mit.edu/tfxue/">Tianfan Xue</a>,
+              <a href="http://people.csail.mit.edu/jiawen/">Jiawen Chen</a>,
+              <a href="http://www.dsharlet.com/">Dillon Sharlet</a>,
+
+              <br>
+              <em>arXiv Preprint</em>, 2018
+              <br>
+              <a href="http://geomstats.ai">project page</a>
+              <p></p>
+              <p>a python package that performs computations on manifolds such as hyperspheres, hyperbolic spaces, spaces of symmetric positive definite matrices and Lie groups of transformations.</p>
+            </td>
+          </tr>
+
+      <tr onmouseout="admm_stop()" onmouseover="admm_start()">
+            <td width="25%">
+              <div class="one">
+                <div class="two" id='admm_image'><img src='images/admm_primal.png' width=170></div>
+                <img src='images/admm_dual.png' width=170>
+              </div>
+              <script type="text/javascript">
+                function admm_start() {
+                  document.getElementById('admm_image').style.opacity = "1";
+                }
+
+                function admm_stop() {
+                  document.getElementById('admm_image').style.opacity = "0";
+                }
+                admm_stop()
+              </script>
+            </td>
+            <td valign="top" width="75%">
+              <a href="https://arxiv.org/abs/1811.11745">
+                <papertitle>Performance Evaluation of the Alternating Direction Method of Multipliers</papertitle>
+              </a>
+              <br>
+              <strong>Johan Mathe</strong>
+              <br>
+              <em>arXiv Preprint</em>, 2018
+              <br>
+              <p></p>
+            </td>
+          </tr>
+
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td>
+              <heading>Startup and corporate Life</heading>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellpadding="20">
+          <tr>
+            <td width="25%"><img src="https://froglabs.ai/static/images/logo.svg" alt="pacman" width="160"></td>
+            <td width="75%" valign="center">
+              <p>
+                <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">
+                  <papertitle>Bay Labs</papertitle>
+                </a>
+                <br>
+                I was part of the Bay Labs founding team. I designed some of the first guidance and diagnostic algorithms with a wonderful team of dedicated people. I still do some consulting for the Bay Labs team on the side, especially in guidance.
+              </p>
+            </td>
+          </tr>
+          <tr>
+          <tr>
+            <td width="25%"><img src="https://baylabs.io/static/images/logo.svg" alt="pacman" width="160"></td>
+            <td width="75%" valign="center">
+              <p>
+                <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">
+                  <papertitle>Bay Labs</papertitle>
+                </a>
+                <br>
+                I was part of the Bay Labs founding team. I designed some of the first guidance and diagnostic algorithms with a wonderful team of dedicated people. I still do some consulting for the Bay Labs team on the side, especially in guidance.
+              </p>
+            </td>
+          </tr>
+          <tr>
+          <tr>
+            <td width="25%"><img src="https://baylabs.io/static/images/logo.svg" alt="pacman" width="160"></td>
+            <td width="75%" valign="center">
+              <p>
+                <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">
+                  <papertitle>Bay Labs</papertitle>
+                </a>
+                <br>
+                I was part of the Bay Labs founding team. I designed some of the first guidance and diagnostic algorithms with a wonderful team of dedicated people. I still do some consulting for the Bay Labs team on the side, especially in guidance.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td width="25%"><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="pacman" width="160"></td>
+            <td width="75%" valign="center">
+              <p>
+                <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">
+                  <papertitle>Google Software Engineer and SRE</papertitle>
+                </a>
+                <br>
+                My first Job was as a software engineer at Google.
+              </p>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td>
+              <heading>Personal Projects</heading>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellpadding="20">
+          <tr>
+
+            <td width="75%" valign="center">
+              <p>
+                <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">
+                  <papertitle>CS188 - Fall 2010 (GSI)</papertitle>
+                </a>
+                <br>
+                <br>
+                <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">
+                  <papertitle>CS188 - Spring 2011 (GSI)</papertitle>
+                </a>
+                <br>
+              </p>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tr>
+            <td>
+              <br>
+              <p align="right">
+                <font size="2">
+                  Big thanks to <a href="https://github.com/jonbarron/jonbarron_website"><strong>original template author</strong></a>.
+                </font>
+              </p>
+            </td>
+          </tr>
+        </table>
+        <script type="text/javascript">
+          var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+          document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+          try {
+            var pageTracker = _gat._getTracker("TODO");
+            pageTracker._trackPageview();
+          } catch (err) {}
+        </script>
+        </td>
+    </tr>
+  </table>
+</body>
+
+</html>
