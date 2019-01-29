@@ -92,8 +92,7 @@
               </p>
               I am a renaissance engineer, mad scientist and entrepreneur interested in understanding the impact of climate change and weather on a plethora of metrics and systems.
 
-My background is applied mathematics and distributed systems. So far I have applied these skills to Flying Robots, Healthcare, Plasma Physics and Energy processing.
-
+              My background is applied mathematics and distributed systems. So far I have applied these skills to <a href="http://loon.co">Flying Robots</a>, <a href="http://baylabs.io">Healthcare</a>, <a href="http://apollo-fusion.com">Plasma Physics and Space Propulsion</a>.
 <p>I co-founded <a href="http://froglabs.ai">Froglabs</a>, where we are building algorithms and infrastructure to understand the impact of weather 1000x faster than the current state of the art.</p>
 
 Cultivating playfulness is in my opinion critical. With a dedicated crew of tinkerers, we enjoy building useless things. One of our most recent completed projects was a remote-controlled flame-throwing inflatable kayak. We also tried to reproduce zero and negative gravity conditions in a tiny aerobatics airplane.
@@ -113,7 +112,7 @@ Cultivating playfulness is in my opinion critical. With a dedicated crew of tink
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tr>
             <td width="100%" valign="middle">
-              <heading>Research</heading>
+              <heading>Projects and Research</heading>
               <p>
               I'm interested in signal processing, optimization, statistics/machine learning, image processing and control theory.
               </p>
@@ -147,15 +146,33 @@ Cultivating playfulness is in my opinion critical. With a dedicated crew of tink
               <br>
               <strong>Johan Mathe</strong>
               <a href="https://sites.google.com/site/ninamiolane/">Nina Miolane</a>,
-              <a href="https://www.andrew.cmu.edu/user/jianwan2/">Jian Wang</a>,
-              <a href="https://www.andrew.cmu.edu/user/jianwan2/">Jian Wang</a>,
-              <a href="https://www.andrew.cmu.edu/user/jianwan2/">Jian Wang</a>,
+              <a href="https://www.researchgate.net/profile/Nicolas_Sebastien">Nicolas Sebastien</a>,
+              <a href="https://www.linkedin.com/in/j%C3%A9r%C3%A9mie-lequeux-a1038061?originalSubdomain=fr">Jeremie Lequeux</a>,
               <br>
               <em>arXiv Preprint</em>, 2019
               <br>
               <p></p>
               <p>
-                By making one camera in a stereo pair hyperspectral we can multiplex dark flash pairs in space instead of time.
+              Photovoltaic (PV) power generation has emerged
+as one of the lead renewable energy sources. Yet,
+its production is characterized by high uncertainty,
+being dependent on weather conditions like solar
+irradiance and temperature. Predicting PV production,
+even in the 24 hour forecast, remains a
+challenge and leads energy providers to keep idle
+- often carbon emitting - plants. In this paper we
+introduce a Long-Term Recurrent Convolutional
+Network using Numerical Weather Predictions
+(NWP) to predict, in turn, PV production in the
+24 hour and 48 hour forecast horizons. This network
+architecture fully leverages both temporal
+and spatial weather data, sampled over the whole
+geographical area of interest. We train our model
+on a NWP dataset from the National Oceanic and
+Atmospheric Administration (NOAA) to predict
+spatially aggregated PV production in Germany.
+We compare its performance to the persistence
+model and to state-of-the-art methods.
               </p>
             </td>
           </tr>
@@ -182,11 +199,11 @@ Cultivating playfulness is in my opinion critical. With a dedicated crew of tink
                   <papertitle>geomstats: a Python Package for Riemannian Geometry in Machine Learning</papertitle>
               </a>
               <br>
-              <a href="http://timothybrooks.com/">Nina Miolane</a>,
+              <a href="https://sites.google.com/site/ninamiolane/">Nina Miolane</a>,
               <strong>Johan Mathe</strong>
-              <a href="https://people.csail.mit.edu/tfxue/">Tianfan Xue</a>,
-              <a href="http://people.csail.mit.edu/jiawen/">Jiawen Chen</a>,
-              <a href="http://www.dsharlet.com/">Dillon Sharlet</a>,
+              <a href="https://www.linkedin.com/in/claire-donnat-a4200272/">Claire Donnat</a>,
+              <a href="https://www.linkedin.com/in/mikael-jorda-920279a6/">Mikael Jorda</a>,
+              <a href="http://www-sop.inria.fr/members/Xavier.Pennec/">Xavier Pennec</a>,
 
               <br>
               <em>arXiv Preprint</em>, 2018
@@ -215,14 +232,16 @@ Cultivating playfulness is in my opinion critical. With a dedicated crew of tink
               </script>
             </td>
             <td valign="top" width="75%">
-              <a href="https://arxiv.org/abs/1811.11745">
-                <papertitle>Performance Evaluation of the Alternating Direction Method of Multipliers</papertitle>
+              <a href="https://web.stanford.edu/class/ee364b/projects/2011projects/reports/mathe.pdf">
+                <papertitle>Pe Evaluation of the Alternating Direction Method of Multipliers</papertitle>
               </a>
               <br>
               <strong>Johan Mathe</strong>
               <br>
-              <em>arXiv Preprint</em>, 2018
               <br>
+              We implemented the Alternate Direction Method of Multipliers (ADMM) global consensus algorithm with the MapReduce framework
+and compare the resulting performance with another distributed optimization technique. We
+will also investigate various caveats with this implementation. More recently I implemented a version of <a href="https://github.com/johmathe/keras-admm">ADMM for keras</a>.
               <p></p>
             </td>
           </tr>
@@ -234,42 +253,104 @@ Cultivating playfulness is in my opinion critical. With a dedicated crew of tink
             </td>
           </tr>
         </table>
+
         <table width="100%" align="center" border="0" cellpadding="20">
-          <tr>
-            <td width="25%"><img src="https://froglabs.ai/static/images/logo.svg" alt="pacman" width="160"></td>
+          <tr onmouseout="froglabs_stop()" onmouseover="froglabs_start()">
+              <td width="25%">
+              <div class="one">
+                <div class="two" id='froglabs_image'><img src='images/froglabs_after.png' width=170></div>
+                <img src='images/froglabs_before.jpg' width=170 > </div>
+              <script type="text/javascript">
+                function froglabs_start() {
+                  document.getElementById('froglabs_image').style.opacity = "1";
+                }
+
+                function froglabs_stop() {
+                  document.getElementById('froglabs_image').style.opacity = "0";
+                }
+                froglabs_stop()
+              </script>
+              </td>
+              <td width="75%">
+                  <a href="http://froglabs.ai"><papertitle>Froglabs</papertitle></a><br><p>
+                  At Froglabs we build algorithms and tools to understand the impact of climate and weather on various metrics. From renewable energy (photovoltaic and wind power) to outbreaks of malaria, from agricultural yields to fire outrbreaks, climate change and weather have a huge impact on our daily lives and businesses. Our goal is to make these impacts more clear to people by providing them the right platform to empower whole kinds of analysis. From scientists to entrepreneurs, from individual farmers to fortune 500 companies.</p>
+              </td>
+          </tr>
+          <tr onmouseout="baylabs_stop()" onmouseover="baylabs_start()">
+              <td width="25%">
+              <div class="one">
+                <div class="two" id='baylabs_image'><img src='images/baylabs_after.jpg' width=170></div>
+                <img src='images/baylabs_before.jpg' width=170 > </div>
+              <script type="text/javascript">
+                function baylabs_start() {
+                  document.getElementById('baylabs_image').style.opacity = "1";
+                }
+
+                function baylabs_stop() {
+                  document.getElementById('baylabs_image').style.opacity = "0";
+                }
+                baylabs_stop()
+              </script>
+              </td>
             <td width="75%" valign="center">
               <p>
-                <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">
+              <a href="http://baylabs.io">
                   <papertitle>Bay Labs</papertitle>
-                </a>
-                <br>
+              </a><br>
+                <p>
                 I was part of the Bay Labs founding team. I designed some of the first guidance and diagnostic algorithms with a wonderful team of dedicated people. I still do some consulting for the Bay Labs team on the side, especially in guidance.
               </p>
             </td>
           </tr>
-          <tr>
-          <tr>
-            <td width="25%"><img src="https://baylabs.io/static/images/logo.svg" alt="pacman" width="160"></td>
+          <tr onmouseout="apollo_stop()" onmouseover="apollo_start()">
+              <td width="25%">
+              <div class="one">
+                <div class="two" id='apollo_image'><img src='images/apollo_after.jpg' width=170></div>
+                <img src='images/apollo_before.jpg' width=170 > </div>
+              <script type="text/javascript">
+                function apollo_start() {
+                  document.getElementById('apollo_image').style.opacity = "1";
+                }
+
+                function apollo_stop() {
+                  document.getElementById('apollo_image').style.opacity = "0";
+                }
+                apollo_stop()
+              </script>
+              </td>
             <td width="75%" valign="center">
               <p>
-                <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">
-                  <papertitle>Bay Labs</papertitle>
+                <a href="http://apollo-fusion.com">
+                  <papertitle>Apollo Fusion</papertitle>
                 </a>
                 <br>
-                I was part of the Bay Labs founding team. I designed some of the first guidance and diagnostic algorithms with a wonderful team of dedicated people. I still do some consulting for the Bay Labs team on the side, especially in guidance.
+              At Apollo I applied black box optimization methods in order to improve the perfomance of plasma based systems. Starting with a hybrid fusion-fission reactor and also hall effect thrusters. I also lead the development of the Power Propulsion Unit, which is the part of a satellite that converts power from the main bus to the thruster itself.
               </p>
             </td>
           </tr>
-          <tr>
-          <tr>
-            <td width="25%"><img src="https://baylabs.io/static/images/logo.svg" alt="pacman" width="160"></td>
+          <tr onmouseout="loon_stop()" onmouseover="loon_start()">
+              <td width="25%">
+              <div class="one">
+                <div class="two" id='loon_image'><img src='images/loon_after.svg' width=170></div>
+                <img src='images/loon_before.jpg' width=170 > </div>
+              <script type="text/javascript">
+                function loon_start() {
+                  document.getElementById('loon_image').style.opacity = "1";
+                }
+
+                function loon_stop() {
+                  document.getElementById('loon_image').style.opacity = "0";
+                }
+                loon_stop()
+              </script>
+              </td>
             <td width="75%" valign="center">
               <p>
-                <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">
-                  <papertitle>Bay Labs</papertitle>
+                <a href="http://loon.co">
+                  <papertitle>Google [X], Project Loon</papertitle>
                 </a>
                 <br>
-                I was part of the Bay Labs founding team. I designed some of the first guidance and diagnostic algorithms with a wonderful team of dedicated people. I still do some consulting for the Bay Labs team on the side, especially in guidance.
+                I designed some of the original guidance algorithms and software in project Loon. That's where I started working extensively with weather data - especially wind data. More details on <a href="https://www.technologyreview.com/s/534986/project-loon/">this article</a> from MIT Tech Review. This <a href="https://www.youtube.com/watch?v=HOndhtfIXSY">video</a> is a good starting point if you never heard of project Loon.
               </p>
             </td>
           </tr>
@@ -277,11 +358,11 @@ Cultivating playfulness is in my opinion critical. With a dedicated crew of tink
             <td width="25%"><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="pacman" width="160"></td>
             <td width="75%" valign="center">
               <p>
-                <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">
+                <a href="http://google.com/about">
                   <papertitle>Google Software Engineer and SRE</papertitle>
                 </a>
                 <br>
-                My first Job was as a software engineer at Google.
+                At google I worked on the design of distributed systems (Google File System and its successor colossus). Then I worked on the census library and the first  version of what's publicly known as GRPC, the google RPC library.
               </p>
             </td>
           </tr>
@@ -289,24 +370,64 @@ Cultivating playfulness is in my opinion critical. With a dedicated crew of tink
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tr>
             <td>
-              <heading>Personal Projects</heading>
+              <heading>Playground</heading>
             </td>
           </tr>
         </table>
         <table width="100%" align="center" border="0" cellpadding="20">
-          <tr>
+          <tr onmouseout="gravity_stop()" onmouseover="gravity_start()">
+              <td width="25%">
+              <div class="one">
+                <div class="two" id='gravity_image'><img src='images/gravity_after.jpg' width=170></div>
+                <img src='images/gravity_before.jpg' width=170 > </div>
+              <script type="text/javascript">
+                function gravity_start() {
+                  document.getElementById('gravity_image').style.opacity = "1";
+                }
+
+                function gravity_stop() {
+                  document.getElementById('gravity_image').style.opacity = "0";
+                }
+                gravity_stop()
+              </script>
+              </td>
 
             <td width="75%" valign="center">
               <p>
-                <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">
-                  <papertitle>CS188 - Fall 2010 (GSI)</papertitle>
+              <a href="https://vimeo.com/239930974">
+                  <papertitle>Gravity Experiments</papertitle>
+                  </a>
+                  <p>
+                  <br>After learning how to fly airplanes in a bunch of various configurations, we decided to go and run a bunch of experiments with floating water. We tried to pour water during inverted flight, during 0 g parabolas, and rolls. This kind of aerobatics flight brings us from -1G all the way to 4Gs.
+                  </p>
+                </a>
+              </p>
+            </td>
+          </tr>
+          <tr onmouseout="kayak_stop()" onmouseover="kayak_start()">
+              <td width="25%">
+              <div class="one">
+                <div class="two" id='kayak_image'><img src='images/kayak_after.jpg' width=170></div>
+                <img src='images/kayak_before.jpg' width=170 > </div>
+              <script type="text/javascript">
+                function kayak_start() {
+                  document.getElementById('kayak_image').style.opacity = "1";
+                }
+
+                function kayak_stop() {
+                  document.getElementById('kayak_image').style.opacity = "0";
+                }
+                kayak_stop()
+              </script>
+              </td>
+
+            <td width="75%" valign="center">
+              <p>
+                <a href="add the video">
+                  <papertitle>Flame-throwing Remote Controlled Kayak</papertitle>
                 </a>
                 <br>
-                <br>
-                <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">
-                  <papertitle>CS188 - Spring 2011 (GSI)</papertitle>
-                </a>
-                <br>
+                We built an RC kayak using exclusively fans. Meaning that there are no underwater moving parts - only thrusters.
               </p>
             </td>
           </tr>
